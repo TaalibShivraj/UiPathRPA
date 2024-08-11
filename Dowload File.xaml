@@ -1,0 +1,572 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="885.6,7755.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Outlook.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.Activities.System.Text</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>UiPath.Activities.System.Date</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="896,7690.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="userName" />
+      <Variable x:TypeArguments="ss:SecureString" Name="pwd" />
+      <Variable x:TypeArguments="x:String" Name="assignmentCntString" />
+      <Variable x:TypeArguments="x:Int32" Name="assignmentCnt" />
+      <Variable x:TypeArguments="sd:DataTable" Default="[new DataTable]" Name="DT1" />
+      <Variable x:TypeArguments="x:String" Name="assignmentName" />
+      <Variable x:TypeArguments="x:Int32" Default="1" Name="currCnt" />
+      <Variable x:TypeArguments="x:String" Name="downloadPath" />
+      <Variable x:TypeArguments="x:String" Name="desPath" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="833.6,149.6" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[desPath]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">C:\Users\taali\OneDrive\Desktop\final\</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="LMS" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="833.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[pwd]" Username="[userName]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome New Tab" sap:VirtualizedContainerService.HintSize="833.6,7276.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="86768d9d-917d-4e35-b78f-0155bdf1f5de" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="800,7036.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="737.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="86768d9d-917d-4e35-b78f-0155bdf1f5de" Text="[userName]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/login/canvas" CVScreenId="cf644031-cc08-43d7-980f-36fc265f5cbd" CvElementArea="684, 399, 549, 61" CvType="InputBox" DesignTimeRectangle="686, 401, 546, 57" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='pseudonym_session_unique_id' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pseudonym_session_unique_id' tag='INPUT' type='text' class='ic-Input text' aaname='Email' /&gt;" Guid="f023a8b7-800a-44e7-9db6-97501894e320" InformativeScreenshot="e268b6b16cf9cba426f00a9e0e011c28.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In to Canvas' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="cf644031-cc08-43d7-980f-36fc265f5cbd" CvTextArea="684, 363, 60, 22" CvTextArgument="Email" CvType="Text" DesignTimeRectangle="686, 361, 546, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='ic-Label' aaname='Email' check:innerText='Email' /&gt;" Guid="9cb19aab-cdeb-46f8-93e2-54e2b42abcb4" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="737.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" IsPassword="True" ScopeIdentifier="86768d9d-917d-4e35-b78f-0155bdf1f5de" SecureText="[pwd]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/login/canvas" CVScreenId="cf644031-cc08-43d7-980f-36fc265f5cbd" CvElementArea="681, 521, 553, 64" CvType="InputBox" DesignTimeRectangle="686, 525, 546, 57" DesignTimeScaleFactor="1.5" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='pseudonym_session_password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='pseudonym_session_password' tag='INPUT' type='password' class='ic-Input text' aaname='Password' /&gt;" Guid="8c9d31bc-2d90-4b2d-bd88-1fe45c0f088c" InformativeScreenshot="90eb62063a81c4aef92f5dce3b92c634.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In to Canvas' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="cf644031-cc08-43d7-980f-36fc265f5cbd" CvTextArea="684, 486, 105, 24" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="686, 485, 546, 31" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='ic-Label' check:innerText='Password' /&gt;" Guid="cd1c85e0-7527-4b72-8fb7-800f5f1fc112" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '登入'" sap:VirtualizedContainerService.HintSize="737.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86768d9d-917d-4e35-b78f-0155bdf1f5de" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/login/canvas" CVScreenId="5937d11b-cc88-44c0-8141-455742e5e55c" CvElementArea="1054, 622, 179, 59" CvTextArea="1111, 637, 65, 27" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="1058, 625, 174, 53" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='Button Button--login' aaname='Log In' check:text='Log In' /&gt;" Guid="b1d6888b-c8db-480a-9157-3c5fd61e4546" InformativeScreenshot="e89e1201707bc76061cbfe237ac6faf5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Log In to Canvas' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="737.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86768d9d-917d-4e35-b78f-0155bdf1f5de" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/" CVScreenId="3abf6ccb-e66f-45b8-8d50-dbe3951ca963" CvTextArea="509, 723, 134, 56" CvTextArgument="sqjad" CvType="Text" DesignTimeRectangle="325, 699, 524, 292" DesignTimeScaleFactor="2" FullSelectorArgument="&lt;webctrl class='ic-DashboardCard__header_hero' parentid='DashboardCard_Container' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ic-DashboardCard__header_hero' parentid='DashboardCard_Container' tag='DIV' type='' aaname='' /&gt;" Guid="9b9bcaa7-9e76-4fbc-97e7-40252eaaf052" InformativeScreenshot="9a252e003815b1f338b67f853e5b3dcf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dashboard' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'Assignment #1'" sap:VirtualizedContainerService.HintSize="737.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="86768d9d-917d-4e35-b78f-0155bdf1f5de" TextString="[assignmentName]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883" CVScreenId="99c0db01-64f8-40ea-91b6-56813110f8e0" CvTextArea="833, 915, 574, 36" CvType="AnyWordGroup" DesignTimeRectangle="837, 917, 593, 32" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='context_module_item_113429809' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='context_module_item_113429809' tag='A' type='' class='ig-title title item_link' /&gt;" Guid="1898cfde-8a5e-4ecb-9cd4-98e07acefbe7" InformativeScreenshot="bde095743fb7abcb508b051969ed4358.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="737.6,112.8" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[desPath+assignmentName]" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Assignment #1'" sap:VirtualizedContainerService.HintSize="737.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86768d9d-917d-4e35-b78f-0155bdf1f5de" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883" CVScreenId="7bcd93e5-f389-4f46-84a2-ce66cbe21964" CvTextArea="833, 915, 574, 36" CvTextArgument="Assignment #1 - Business Requirements" CvType="Text" DesignTimeRectangle="837, 917, 593, 32" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='context_module_item_113429809' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='context_module_item_113429809' tag='A' type='' class='ig-title title item_link' aaname='               Assignment #1 - Business Requirements             ' check:innerText='Assignment #1 - Business Requirements' /&gt;" Guid="8af1d77c-f12f-410d-928d-eaacee9a0d2c" InformativeScreenshot="5aef1563eedf75f52c1fa1b9670ed291.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SpeedGrader'" sap:VirtualizedContainerService.HintSize="737.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="86768d9d-917d-4e35-b78f-0155bdf1f5de" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/assignments/48283773?module_item_id=113429809" CVScreenId="d895e3ba-e9ed-47bf-83b8-4ef1c375d6bd" CvTextArea="2049, 647, 190, 36" CvTextArgument="SpeedGrader" CvType="Text" DesignTimeRectangle="2011, 625, 480, 82" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='speed_grader_link_mount_point' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='speed_grader_link_mount_point' tag='A' type='' class='icon-speed-grader' aaname='SpeedGrader' check:innerText='SpeedGrader' /&gt;" Guid="b8ce960b-e18f-40fe-8064-be055627f9e8" InformativeScreenshot="f34d638389c33defcecd59d0929cfa74.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="737.6,122.4" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Assignment #1 - Business Requirements," sap:VirtualizedContainerService.HintSize="737.6,5046.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" ScopeGuid="85b62604-31ae-4648-98b3-6d14ea71c65d" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="704,4804.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="fileName" />
+                      <Variable x:TypeArguments="x:Boolean" Default="False" Name="isExisit" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text '0/4'" sap:VirtualizedContainerService.HintSize="641.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" TextString="[assignmentCntString]" Version="V3">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="75db23c9-3b7b-417c-86eb-fd316ad76c3c" CvTextArea="1579, 373, 58, 32" CvType="AnyWordGroup" DesignTimeRectangle="1573, 367, 72, 48" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl id='x_of_x_graded' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='x_of_x_graded' tag='DIV' type='' class='statsMetric__Item-value' /&gt;" Guid="a01a5bf7-682c-4acf-ba0c-b65cd80ba4b6" InformativeScreenshot="98a19c652ae47f0b6fef4ff493fdbed8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                    <Assign sap:VirtualizedContainerService.HintSize="641.6,114.4" sap2010:WorkflowViewState.IdRef="Assign_3">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[assignmentCnt]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[Convert.ToInt32(assignmentCntString.Split("/"c)(1))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:BuildDataTable DataTable="[DT1]" DisplayName="Grade Book" sap:VirtualizedContainerService.HintSize="641.6,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Score&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Comment&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[currCnt &lt;= assignmentCnt]" DisplayName="While" sap:VirtualizedContainerService.HintSize="641.6,3553.6" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+                      <ui:InterruptibleWhile.Body>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="608,3407.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="studentName" />
+                            <Variable x:TypeArguments="x:String" Name="variable1" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGetText DisplayName="Get Text 'Adam'" sap:VirtualizedContainerService.HintSize="545.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" TextString="[studentName]" Version="V3">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="77c13d18-783a-43c0-989f-42e450ad35cb" CvTextArea="2027, 393, 78, 28" CvType="AnyWordGroup" DesignTimeRectangle="2033, 391, 370, 40" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl class='ui-selectmenu-item-header' parentid='students_selectmenu-button' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ui-selectmenu-item-header' parentid='students_selectmenu-button' tag='SPAN' type='' /&gt;" Guid="e5520f3f-45fb-42aa-958b-0f511406f80a" InformativeScreenshot="49be7e10df3089711549e4f804d342d7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{studentName, &quot;&quot;, &quot;&quot;}]" DataTable="[DT1]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="545.6,220" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                          <Assign sap:VirtualizedContainerService.HintSize="545.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[currCnt]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[currCnt+1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="545.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Boolean">[isExisit]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <If Condition="[currCnt = 5]" sap:VirtualizedContainerService.HintSize="545.6,412" sap2010:WorkflowViewState.IdRef="If_5">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,136.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:Break sap:VirtualizedContainerService.HintSize="353.6,48" sap2010:WorkflowViewState.IdRef="Break_3" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <uix:NCheckElement ContinueOnError="True" DelayBefore="0" DisplayName="Check Element 'Download this file'" sap:VirtualizedContainerService.HintSize="545.6,189.6" sap2010:WorkflowViewState.IdRef="NCheckElement_5" Result="[isExisit]" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" Version="V3">
+                            <uix:NCheckElement.Target>
+                              <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="4d2dab5a-1019-4f54-9c26-0937de42a158" CvElementArea="2412, 830, 51, 51" CvType="Icon" DesignTimeRectangle="2423, 839, 32, 32" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                     Download this file                   ' aria-role='button' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                     Download this file                   ' aria-role='button' tag='A' type='' class='submission-file-download icon-download' check:innerText='Download this file' /&gt;" Guid="b5aa187f-d258-4f16-9a59-85dd86672f7b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAFUSURBVFhH7dSxSsNAHMdxIY+R1bfoq7j6BiJu4guUbk5dOjh2KxWsBEHayQ5VXIQMXQKttKBYxXD8vL+ezXm1/i+5NHa4LwSOCyQfcnfZwZblQVwexOUOuu0jOOggaD2oCbc8iMuDuDyIy4O4PIjLg7jsQbNHzIUa6/0JEphPZ2pslx0oGWH/qIPa6R1iE7UWJBBfX6Em7+1dTNQcnx1oMUazLl8qH76C+hWUYYLDHprxi5rns1+ydagVUHEMlW9Ta6jdxugL9QPkhqHygSgTNcxArhgqP4hKE5x9o+Rm/wQdd50xVDEQpaGWlyOGKg6idFQJGMoNRBGqEZWCodxBJaeB5BlOzd/whhNveE3VWLUExZeRPDER2klFKPGMQauLsH6D+4Wak2Wg8x5C2pxVoBSGDkN40sfgKXuftmTv1aBMjPZ1KGNTbxjFYCgD9P9tGQj4AKdEff4bi+liAAAAAElFTkSuQmCC" InformativeScreenshot="75c0f649440443ba6157401009e96e81.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                            </uix:NCheckElement.Target>
+                          </uix:NCheckElement>
+                          <If Condition="[isExisit]" sap:VirtualizedContainerService.HintSize="545.6,2080" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="512,1813.6" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="variable2" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText DisplayName="Get Text 'T405-Pathway-2023-2024.…'" sap:VirtualizedContainerService.HintSize="449.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" TextString="[fileName]" Version="V3">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="f4d79dee-cbb8-4ce1-a1cc-8fdf3c8d4683" CvTextArea="1969, 851, 382, 30" CvType="AnyWordGroup" DesignTimeRectangle="1972, 852, 380, 28" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='submission_files_list' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='submission_files_list' tag='A' type='' class='display_name no-hover' /&gt;" Guid="2b1834c3-a083-4ea8-a7e4-57769c18b4ef" InformativeScreenshot="388e60eae572adffcd02a40dfed0215b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download this file'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="a18fc282-7ca1-4d13-b939-6eb2b61842f9" CvElementArea="2412, 830, 51, 51" CvType="Icon" DesignTimeRectangle="2423, 839, 32, 32" DesignTimeScaleFactor="2" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='                     Download this file                   ' aria-role='button' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='                     Download this file                   ' aria-role='button' tag='A' type='' class='submission-file-download icon-download' check:innerText='Download this file' /&gt;" Guid="aca28b83-e4b3-417c-98a1-87b2a4e6633b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAHYcAAB2HAY/l8WUAAAFTSURBVFhH7dOxSsNAHMdxIY+RtW/RV3F1kIKb+ASFbj5A6VTIVAwoQjZxCujQQXBRAoKlUIQqQsSS8PP+ejbntfV/ycXY4b4QOC6Q+yS528GW5UBcDsRlDxpH8PaH8Po3csIuB+JyIC4H4nIgLgficiAuc9DTFPNcjtV+BWWYz2ZybJYZaBJj72CI9vEVEh21EZQhuThFW9zbPX+Uc3xmoPQOg65YVDx8BbUWVGC8zgiD+1c5z2f+yzahVkDVMVS5Ta2gWr34C/UDZIehyoEoHXVdgGwxVHkQtXhA8I0Sm/0TdBhYY6hqIEpBLS9LDFUdRKmoGjCUHYgiVC+sBUPZg2pOAWXibcXVZHmKt4Ucy5agJArFiQlxMmkIlT8j7gfwu5e4TeWcqACdjeDT5mwCJTF0GPyjCPFLsZ7yy96bQekY5etQ2qb+YxSDoTTQ/7dlIOADEfNyJQ94P/YAAAAASUVORK5CYII=" InformativeScreenshot="8301ee54299219993c51ade1e9b0aa19.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <If Condition="[currCnt = 2]" sap:VirtualizedContainerService.HintSize="449.6,580.8" sap2010:WorkflowViewState.IdRef="If_4">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,305.6" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Assignment #'" sap:VirtualizedContainerService.HintSize="353.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" Version="V3">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112800578" CVScreenId="c2457178-ac19-447f-ac0d-b1f575d8fb5e" CvTextArea="88, 327, 100, 22" CvTextArgument="Assignment #" CvType="Text" DesignTimeRectangle="88, 327, 108, 22" DesignTimeScaleFactor="1.5" ElementType="Text" Guid="fafedc6e-7c38-4fce-b4b5-b60f35ff4076" InformativeScreenshot="b1456ab3e92d065f12d130e942fa10fa.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V4" Visibility="Interactive" />
+                                        </uix:NClick.Target>
+                                        <uix:NClick.VerifyOptions>
+                                          <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                            <uix:VerifyExecutionOptions.Retry>
+                                              <InArgument x:TypeArguments="x:Boolean" />
+                                            </uix:VerifyExecutionOptions.Retry>
+                                            <uix:VerifyExecutionOptions.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:VerifyExecutionOptions.Timeout>
+                                          </uix:VerifyExecutionOptions>
+                                        </uix:NClick.VerifyOptions>
+                                      </uix:NClick>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="449.6,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="HardwareEvents" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" Text="[studentName]" Version="V3">
+                                  <uix:NTypeInto.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="b68008af-e9f4-4b7a-adf0-df5c5a1d34d2" CvElementArea="197, 522, 937, 35" CvType="InputBox" DesignTimeRectangle="202, 528, 902, 27" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="aa412756-58e8-49f4-9e59-e57aed8290de" InformativeScreenshot="749cc3d5f247a9b7d516655d6aa4d868.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="b68008af-e9f4-4b7a-adf0-df5c5a1d34d2" CvTextArea="111, 531, 81, 19" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="26, 525, 173, 33" ElementType="Text" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' automationid='' check:text='File name:' /&gt;" Guid="980e6a79-0452-448d-8ca3-54e54f143528" SearchSteps="Selector, FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NTypeInto.Target>
+                                  <uix:NTypeInto.VerifyOptions>
+                                    <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    </uix:VerifyExecutionTypeIntoOptions>
+                                  </uix:NTypeInto.VerifyOptions>
+                                </uix:NTypeInto>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" sap:VirtualizedContainerService.HintSize="449.6,225.6" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="b68008af-e9f4-4b7a-adf0-df5c5a1d34d2" CvElementArea="833, 637, 132, 40" CvTextArea="877, 649, 40, 18" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="833, 639, 132, 39" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' check:text='&amp;amp;Save' /&gt;" Guid="bdc9ccbf-a5d8-4210-a0e7-d9d05c812a9b" InformativeScreenshot="92eba85d65ff2ad5122a2cc8b013bcbc.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next Arrow'" sap:VirtualizedContainerService.HintSize="449.6,216.8" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="85b62604-31ae-4648-98b3-6d14ea71c65d" Version="V3">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" CVScreenId="fcf0ecce-698e-4706-aaf6-e2aecb49cb7f" CvElementArea="1844, 161, 37, 31" CvType="Icon" DesignTimeRectangle="1852, 165, 24, 24" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl parentid='next-student-button' tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='next-student-button' tag='I' type='' class='icon-arrow-right next' aaname='' /&gt;" Guid="407750db-d9c0-4d43-ab45-379876b8641f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACuSURBVEhLY7D3Dv9PTzxqIdXxqIVUx1SxMK5r5//dm3qxyqFjKlhY+3/d3V//////9f/BDsKWUidI0yf93/KYOEupF4dEWkrdREOEpdS1EITTZ/zf/Qy3pdS3EITxWAqxcOq5/8++//r/k5r4J9A+MEC1lD4W7p70Pw7FQmpjPImHBokGf0qlroV0zRZ0zfhEWgbCVLBwAArvuEn7/h+kX/VEGh61kOqYzhaG/wcA+6lkV6x1wxIAAAAASUVORK5CYII=" InformativeScreenshot="28b103a6b1e8b6789e308960b1e6357a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,104.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </ui:InterruptibleWhile.Body>
+                    </ui:InterruptibleWhile>
+                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="641.6,764.8" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+                      <ueab:ExcelProcessScopeX.Body>
+                        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,653.6" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="529.6,564.8" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_5" ResizeWindow="None" WorkbookPath="[desPath +assignmentName+&quot;\Grade Book.xlsx&quot;]">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,272" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Sheet1&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_4" IgnoreEmptySource="False" Source="[DT1]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelProcessScopeX.Body>
+                    </ueab:ExcelProcessScopeX>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-13, -13, 2586, 1546" BrowserType="Chrome" ContentHash="cSWWQo0WxUKbWs1EhevKWg" IconBase64="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" InformativeScreenshot="7a978e9fb0485395038d383fcb53f5d0.jpg" Reference="OgGxMNo_xEyxhjA-1aNT6w/TuL5amPckECkTlqUM1rYZA" Selector="&lt;html app='chrome.exe' title='Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001' /&gt;" Title="Assignment #1 - Business Requirements, SpeedGrader, Winter 2024 BUS4051-0001" Url="https://canvas.instructure.com/courses/9921883/gradebook/speed_grader?assignment_id=48283773&amp;student_id=112835855" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="HwKEi4DjeUGgaXw1WKPSfA" IconBase64="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" InformativeScreenshot="99982fcef8d8cf48162d5c9bd6ad0093.jpg" Reference="TRqT7duRF0SzQwXUz2BMKA/XBsTvb4cPkKyaXzUfaOQ9g" Selector="&lt;html app='chrome.exe' title='Log In to Canvas' /&gt;" Title="Log In to Canvas" Url="https://canvas.instructure.com/login/canvas" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
